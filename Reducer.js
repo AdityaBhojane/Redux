@@ -21,7 +21,7 @@ function numberReducer(initialObject, action) {
   }
 }
 
-let obj = { number: 2 };
+let obj = { number: 0 };
 
-console.log(numberReducer(obj, { type: "Increment", payload: 20 }));
-console.log(numberReducer(obj, { type: "Multiply", payload: 9 }));
+console.log(numberReducer(obj, { type: "Increment", payload: null }));
+// console.log(numberReducer(obj, { type: "Multiply", payload: 9 }));
