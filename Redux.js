@@ -15,7 +15,7 @@ function numberReducer(initialObject, action) {
         number: initialObject.number * numberToMultiply,
       };
     }else{
-        return {...initialObject}
+        return initialObject
     }
   }
 
@@ -33,5 +33,5 @@ function numberReducer(initialObject, action) {
     //   }
     
 console.log(store.getState());
-console.log(store.dispatch({type:'Increment', payload:10}));
+store.dispatch({type:'Increment', payload:10})
 console.log(store.getState());
